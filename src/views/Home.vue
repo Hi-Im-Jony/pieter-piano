@@ -1,15 +1,15 @@
 <template>
-  <hello-world/>
+  <parallax-pic />
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue'
+import ParallaxPic from "../components/ParallaxPic.vue";
 
-  export default {
-    name: 'Home',
+export default {
+  name: "Home",
 
-    components: {
-        HelloWorld,
-    },
-  }
+  components: {
+    ParallaxPic,
+  },
+};
 </script>
