@@ -41,7 +41,6 @@ export default {};
   color: white;
   text-shadow: 2px 2px 2px black;
   text-align: center;
-  font-size: 20px;
 }
 
 .custom-btn {
