@@ -63,7 +63,7 @@
       </div>
     </div>
     <div id="btn-container">
-      <v-btn id="custom-btn">
+      <v-btn href="/testimonials" id="custom-btn">
         Testimonials
       </v-btn>
     </div>
