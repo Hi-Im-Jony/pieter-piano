@@ -4,6 +4,7 @@
       <welcome-text />
       <pros />
       <about />
+      <my-footer />
     </div>
   </div>
 </template>
@@ -12,6 +13,7 @@
 import WelcomeText from "../components/welcome-text.vue";
 import Pros from "../components/pros.vue";
 import About from "../components/about.vue";
+import myFooter from "../components/my-footer.vue";
 
 export default {
   name: "Home",
@@ -19,6 +21,7 @@ export default {
     WelcomeText,
     Pros,
     About,
+    myFooter,
   },
 };
 </script>
