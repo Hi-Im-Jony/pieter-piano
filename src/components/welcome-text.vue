@@ -1,6 +1,6 @@
 <template>
-  <div class="parallax">
-    <div id="parallax-text">
+  <div class="text-container">
+    <div id="welcome-text">
       <h1>Professional Piano Lessons</h1>
       <h2 style="margin: 15px 5px 15px 5px">
         Professional piano lessons, delivered by an experienced teacher, with an
@@ -12,27 +12,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  components: {},
+};
 </script>
 
 <style scoped>
-.parallax {
-  /* The image used */
-  background-image: url("../assets/home-pic.jpg");
-  /* Set a specific height */
-  min-height: 90vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.text-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 40vh 0 40vh 0;
+  background: transparent;
 }
 
-#parallax-text {
+#welcome-text {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -45,9 +39,16 @@ export default {};
 
 .custom-btn {
   color: white !important;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 1px 1px 5px 1px black;
   background-color: transparent !important;
   border: solid white;
-  border-width: 1px;
+  border-width: 2px;
   margin: 50px 0 0 0;
+  height: 5.5vh !important;
+  max-height: 60px;
+  width: 8vw;
+  max-width: 155px;
+  font-size: 18px !important;
 }
 </style>
