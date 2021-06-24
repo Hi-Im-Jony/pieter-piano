@@ -1,5 +1,6 @@
 <template>
   <div id="about-container">
+    <div id="background-color"></div>
     <div id="about">
       <div data-aos="fade-up">
         <h1 id="about-title">
@@ -39,7 +40,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div id="row-2" class="row">
         <div class="text-container" data-aos="fade-up">
           <p class="text">
             As a result I have had great success using both the RIAM and TCM
@@ -60,6 +61,11 @@
           <img id="fam-pic" src="../assets/Fam-photo.jpeg" alt="" />
         </div>
       </div>
+    </div>
+    <div id="btn-container">
+      <v-btn id="custom-btn">
+        Testimonials
+      </v-btn>
     </div>
   </div>
 </template>
@@ -91,8 +97,17 @@ export default {
   position: relative;
   bottom: 25vh;
 }
+#background-color {
+  background: rgb(39, 38, 38);
+  height: 48vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
 #about-title {
   margin: 20px;
+  position: relative;
+  bottom: 5vh;
 }
 .row {
   display: flex;
@@ -120,5 +135,19 @@ export default {
   text-align: center;
   font-size: 20px;
   margin: 20px;
+}
+
+#btn-container {
+  position: absolute;
+  bottom: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+#custom-btn {
+  border: solid rgb(245, 245, 237) !important;
+  color: rgb(245, 245, 237) !important;
+  background: transparent;
+  font-size: 20px !important;
 }
 </style>

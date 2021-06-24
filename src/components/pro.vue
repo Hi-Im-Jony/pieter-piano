@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 #pro {
-  background-color: rgb(245, 245, 237);
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

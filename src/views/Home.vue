@@ -4,11 +4,7 @@
       <welcome-text />
       <pros />
       <about />
-      <div id="btn-container">
-        <v-btn id="custom-btn">
-          Testimonials
-        </v-btn>
-      </div>
+
       <my-footer />
     </div>
   </div>
@@ -43,19 +39,5 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#btn-container {
-  position: absolute;
-  bottom: 15vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-#custom-btn {
-  border: solid rgb(245, 245, 237) !important;
-  color: rgb(245, 245, 237) !important;
-  background: transparent;
-  font-size: 20px !important;
 }
 </style>
