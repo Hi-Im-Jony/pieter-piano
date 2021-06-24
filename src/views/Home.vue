@@ -3,6 +3,7 @@
     <div id="parallax">
       <welcome-text />
       <pros />
+      <about />
     </div>
   </div>
 </template>
@@ -10,12 +11,14 @@
 <script>
 import WelcomeText from "../components/welcome-text.vue";
 import Pros from "../components/pros.vue";
+import About from "../components/about.vue";
 
 export default {
   name: "Home",
   components: {
     WelcomeText,
     Pros,
+    About,
   },
 };
 </script>
