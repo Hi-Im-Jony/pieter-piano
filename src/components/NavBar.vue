@@ -9,11 +9,11 @@
       <v-spacer></v-spacer>
 
       <a class="nav-link" href="/">Home</a>
-      <a class="nav-link" href="/about">Meet Your Teacher</a>
+      <a class="nav-link" href="/about">Book Lessons</a>
       <v-menu open-on-hover top offset-y>
         <template v-slot:activator="{ on, attrs }">
           <a class="nav-link" v-bind="attrs" v-on="on">
-            Content
+            Media
           </a>
         </template>
 
@@ -25,10 +25,8 @@
       </v-menu>
 
       <div class="custom-spacer" />
-
-      <a class="nav-link" href="/lessons">Lessons</a>
+      <a class="nav-link" href="/payments">Online Payment</a>
       <a class="nav-link" href="/contact">Contact</a>
-      <a class="nav-link" href="/payments">Payments</a>
     </v-app-bar>
   </div>
 </template>
