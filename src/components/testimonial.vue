@@ -6,12 +6,12 @@
     </div>
     <div class="test-text-container">
       <div v-if="!readMore" class="short-text">
-        {{ test.text.slice(0, 200) }}...
+        "{{ test.text.slice(0, 200) }}..."
         <br />
         <a v-on:click="readMore = true"> Read more</a>
       </div>
       <div v-else>
-        {{ test.text }}
+        "{{ test.text }}"
         <br />
         <a v-on:click="readMore = false">See less</a>
       </div>
@@ -43,12 +43,14 @@ export default {
 
 .author-container {
   border-right: solid white;
+  border-width: 1px;
   padding: 0 20px 0 0;
   margin: 0 20px 0 0;
 }
 
 .test-text-container {
   width: 500px;
+  padding: 0 10px 0 0;
   text-align: center;
 }
 </style>
