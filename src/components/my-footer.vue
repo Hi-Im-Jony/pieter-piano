@@ -19,7 +19,7 @@ export default {
 <style scoped>
 footer {
   color: white;
-  background-color: rgb(36, 33, 33);
+  background-color: black;
   text-align: center;
   position: absolute;
   width: 100vw;
