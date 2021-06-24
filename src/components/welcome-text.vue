@@ -45,10 +45,7 @@ export default {
   border: solid white;
   border-width: 2px;
   margin: 50px 0 0 0;
-  height: 5.5vh !important;
-  max-height: 60px;
-  width: 8vw;
-  max-width: 155px;
-  font-size: 18px !important;
+
+  font-size: 20px !important;
 }
 </style>
