@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 #pro {
-  background-color: white;
+  background-color: rgb(245, 245, 237);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -33,6 +33,7 @@ export default {
   bottom: 25vh;
   border-radius: 25px;
   box-shadow: 0px 0px 10px 0px black;
+  color: black;
 }
 .pic {
   width: 300px;

@@ -72,7 +72,7 @@ export default {
 
 <style scoped>
 #about-container {
-  background: white;
+  background: rgb(29, 27, 27);
   width: 100vw;
   padding: 20px;
   display: flex;

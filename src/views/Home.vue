@@ -53,8 +53,9 @@ export default {
   justify-content: center;
 }
 #custom-btn {
-  border: solid rgb(51, 49, 49) !important;
-  color: rgb(51, 49, 49) !important;
+  border: solid rgb(245, 245, 237) !important;
+  color: rgb(245, 245, 237) !important;
+  background: transparent;
   font-size: 20px !important;
 }
 </style>

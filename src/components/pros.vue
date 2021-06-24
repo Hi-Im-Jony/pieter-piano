@@ -40,6 +40,6 @@ export default {
   align-items: center;
   padding: 40px 0 40px 0;
   width: 100vw;
-  background-color: white;
+  background-color: rgb(29, 27, 27);
 }
 </style>

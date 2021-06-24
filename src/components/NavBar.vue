@@ -1,6 +1,6 @@
 <template>
   <div id="navbar">
-    <v-app-bar fixed app flat>
+    <v-app-bar color="rgb(245, 245, 237)" fixed app flat>
       <a href="/" id="title-sub-container">
         <h1 id="title">Pieter's Piano</h1>
         <small id="sub">Professional Piano Lessons</small>

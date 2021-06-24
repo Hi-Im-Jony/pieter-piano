@@ -25,5 +25,6 @@ export default {
   font-size: 16.5px;
   padding: 0px;
   margin: 0px;
+  color: rgb(223, 219, 219);
 }
 </style>
