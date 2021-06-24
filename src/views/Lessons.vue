@@ -1,26 +1,31 @@
 <template>
-  <div data-aos="fade-in" class="lessons">
-    <h1 id="page-title">
-      Book Your Lesson Today
-    </h1>
-    <img id="lesson-pic" src="../assets/lesson-pic.png" alt="" />
-    <services />
-    <form name="contact" netlify>
-      <h2 id="form-title">
-        Fill in your details, and I'll reach out to arrange your lessons!
-      </h2>
-      <div class="input-container">
-        <v-text-field label="Full name" required></v-text-field>
+  <div>
+    <div id="background-img"></div>
+    <div data-aos="fade-in" class="lessons">
+      <h1 id="page-title">
+        Book Your Lesson Today
+      </h1>
+      <img id="lesson-pic" src="../assets/lesson-pic.png" alt="" />
 
-        <v-text-field label="Phone" required></v-text-field>
+      <services />
 
-        <v-text-field label="E-mail" required></v-text-field>
-      </div>
-      <div>
-        <button type="submit">Send</button>
-      </div>
-    </form>
-    <my-footer />
+      <form name="contact" netlify data-aos="fade-up">
+        <h2 id="form-title">
+          Fill in your details, and I'll reach out to arrange your lessons!
+        </h2>
+        <div class="input-container">
+          <v-text-field label="Full name" required></v-text-field>
+
+          <v-text-field label="Phone" required></v-text-field>
+
+          <v-text-field label="E-mail" required></v-text-field>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+      <my-footer />
+    </div>
   </div>
 </template>
 
@@ -37,9 +42,22 @@ export default {
 </script>
 
 <style scoped>
+#background-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/potential-pic.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+}
 .lessons {
   min-height: 100vh;
-  background-color: rgb(29, 27, 27);
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
