@@ -53,7 +53,7 @@ export default {
   margin: 30px;
 }
 form {
-  background: rgba(255, 255, 255, 0.815);
+  background: rgb(212, 211, 211);
   color: black;
   width: 55%;
   padding: 40px;
