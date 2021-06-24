@@ -26,5 +26,6 @@ export default {
   padding: 0px;
   margin: 0px;
   color: rgb(223, 219, 219);
+  background-color: rgb(29, 27, 27);
 }
 </style>
