@@ -6,7 +6,7 @@
         Professional piano lessons, delivered by an experienced teacher, with an
         unbeatable distinction rate!
       </h2>
-      <v-btn class="custom-btn">Book Lesson</v-btn>
+      <v-btn to="/lessons" class="custom-btn">Book Lesson</v-btn>
     </div>
   </div>
 </template>
