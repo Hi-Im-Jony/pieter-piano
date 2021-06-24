@@ -24,6 +24,7 @@ footer {
   position: absolute;
   width: 100vw;
   padding: 10px;
+  bottom: 0;
 }
 small {
   margin: 0 20px 0 10px;
