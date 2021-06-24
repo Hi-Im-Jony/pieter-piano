@@ -9,7 +9,7 @@
     <div id="container">
       <div class="group">
         <h1 class="group-title">
-          Where I Can Give Lessons
+          Where The Magic Happens
         </h1>
         <p id="address">
           14 Deerhaven View Clonee Dublin 15,
