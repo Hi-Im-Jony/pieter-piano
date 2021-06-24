@@ -1,69 +1,71 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
+    path: "/lessons",
+    name: "Lessons",
 
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () =>
+      import(/* webpackChunkName: "lessons" */ "../views/Lessons.vue"),
   },
   {
-    path: '/lessons',
-    name: 'Lessons',
+    path: "/contact",
+    name: "Contact",
 
-    component: () => import(/* webpackChunkName: "lessons" */ '../views/Lessons.vue')
+    component: () =>
+      import(/* webpackChunkName: "contact" */ "../views/Contact.vue"),
   },
   {
-    path: '/contact',
-    name: 'Contact',
+    path: "/payments",
+    name: "Payments",
 
-    component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
+    component: () =>
+      import(/* webpackChunkName: "payments" */ "../views/Payment.vue"),
   },
   {
-    path: '/payments',
-    name: 'Payments',
+    path: "/recitals",
+    name: "Recitals",
 
-    component: () => import(/* webpackChunkName: "payments" */ '../views/Payment.vue')
+    component: () =>
+      import(/* webpackChunkName: "recitals" */ "../views/Recitals.vue"),
   },
   {
-    path: '/recitals',
-    name: 'Recitals',
+    path: "/pupils",
+    name: "Pupils",
 
-    component: () => import(/* webpackChunkName: "recitals" */ '../views/Recitals.vue')
+    component: () =>
+      import(/* webpackChunkName: "pupils" */ "../views/Pupils.vue"),
   },
   {
-    path: '/pupils',
-    name: 'Pupils',
+    path: "/testimonials",
+    name: "Testimonials",
 
-    component: () => import(/* webpackChunkName: "pupils" */ '../views/Pupils.vue')
-  },
-  {
-    path: '/testimonials',
-    name: 'Testimonials',
-
-    component: () => import(/* webpackChunkName: "testimonials" */ '../views/Testimonials.vue')
+    component: () =>
+      import(
+        /* webpackChunkName: "testimonials" */ "../views/Testimonials.vue"
+      ),
   },
   {
     path: "*",
     name: "404",
 
-     component: () => import(/* webpackChunkName: "404" */ '../views/404.vue')
-  }
-]
+    component: () => import(/* webpackChunkName: "404" */ "../views/404.vue"),
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
