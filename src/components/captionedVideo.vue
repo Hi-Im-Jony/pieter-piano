@@ -1,27 +1,42 @@
 <template>
   <div class="container">
-    <div class="caption-container">
-      <i class="piece-title">"Piece Title"</i>
+    <div v-if="orientation == 'left'" class="caption-container">
+      <i class="piece-title">"{{ piece }}"</i>
       <p class="description">Perfromed by {{ performer }}</p>
     </div>
-    <div class="video-container"></div>
+    <div class="video-container">
+      <video
+        width="500"
+        height="250"
+        controls
+        :src="require('../assets/videos/' + src + '')"
+      ></video>
+    </div>
+    <div v-if="orientation == 'right'" class="caption-container">
+      <i class="piece-title">"{{ piece }}"</i>
+      <p class="description">Perfromed by {{ performer }}</p>
+    </div>
   </div>
 </template>
 
 <script>
-import { defineComponent } from "@vue/composition-api";
-
-export default defineComponent({
+export default {
   name: "CaptionedVideo",
-  props: ["piece", "performer", "orientation"],
-});
+  props: ["piece", "performer", "orientation", "src"],
+};
 </script>
 
 <style scoped>
 .container {
   display: flex;
-  border: solid white;
+  align-items: center;
+  justify-content: center;
   padding: 40px;
   margin: 20px;
+  width: 50%;
+}
+.caption-container {
+  text-align: center;
+  width: 500px;
 }
 </style>
