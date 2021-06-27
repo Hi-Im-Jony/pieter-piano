@@ -5,7 +5,7 @@
       <h1 id="page-title">
         Book Your Lesson Today
       </h1>
-      <img id="lesson-pic" src="../assets/lesson-pic.png" alt="" />
+      <img id="lesson-pic" src="../assets/images/lesson-pic.png" alt="" />
 
       <services />
 
@@ -44,7 +44,7 @@ export default {
 <style scoped>
 #background-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/potential-pic.jpg");
+    url("../assets/images/potential-pic.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

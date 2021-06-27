@@ -34,7 +34,7 @@ export default {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  background-image: url("../assets/potential-pic.jpg");
+  background-image: url("../assets/images/potential-pic.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

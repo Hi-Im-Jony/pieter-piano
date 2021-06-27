@@ -3,7 +3,7 @@
     <h2>{{ title }}</h2>
     <img
       class="pic"
-      :src="require('@/assets/' + imageName + '')"
+      :src="require('@/assets/images' + imageName + '')"
       alt="image not found"
     />
     <p class="pro-text">{{ text }}</p>

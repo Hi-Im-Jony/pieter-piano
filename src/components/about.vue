@@ -10,7 +10,7 @@
 
       <div class="row">
         <div data-aos="fade-up">
-          <img id="selfie" src="../assets/selfie.png" alt="" />
+          <img id="selfie" src="../assets/images/selfie.png" alt="" />
         </div>
 
         <div class="text-container" data-aos="fade-up">
@@ -58,7 +58,7 @@
           </p>
         </div>
         <div data-aos="fade-up">
-          <img id="fam-pic" src="../assets/Fam-photo.jpeg" alt="" />
+          <img id="fam-pic" src="../assets/images/Fam-photo.jpeg" alt="" />
         </div>
       </div>
     </div>
