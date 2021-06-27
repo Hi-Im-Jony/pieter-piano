@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div data-aos="fade-up" class="container">
     <div v-if="orientation == 'left'" class="caption-container">
       <i class="piece-title">"{{ piece }}"</i>
       <p class="description">Perfromed by {{ performer }}</p>
@@ -34,6 +34,8 @@ export default {
   padding: 40px;
   margin: 20px;
   width: 50%;
+  background: rgba(17, 17, 17, 1);
+  box-shadow: 0px 0px 2px 0px black;
 }
 .caption-container {
   text-align: center;
