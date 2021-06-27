@@ -40,10 +40,10 @@ export default {
         title: "Recitals",
         to: "/recitals",
       },
-      {
-        title: "Past and Present Pupils",
-        to: "/pupils",
-      },
+      // {
+      //   title: "Past and Present Pupils",
+      //   to: "/pupils",
+      // },
       {
         title: "Testimonials",
         to: "/testimonials",
