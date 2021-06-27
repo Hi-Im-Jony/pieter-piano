@@ -67,15 +67,19 @@
       orientation="left"
       src="We-Wish-You-A-Merry-Christmas.mp4"
     />
+    <div id="spacer-20px"></div>
+    <my-footer />
   </div>
 </template>
 
 <script>
 import CaptionedVideo from "../components/captionedVideo.vue";
+import MyFooter from "../components/my-footer.vue";
 export default {
   name: "Recitals",
   components: {
     CaptionedVideo,
+    MyFooter,
   },
 };
 </script>
@@ -97,5 +101,8 @@ export default {
 #page-descriptor {
   width: 40%;
   text-align: center;
+}
+#spacer-20px {
+  height: 20px;
 }
 </style>
