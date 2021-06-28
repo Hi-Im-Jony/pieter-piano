@@ -9,16 +9,26 @@
 
       <services />
 
-      <form name="contact" netlify data-aos="fade-up">
+      <form
+        name="book-lesson"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        data-aos="fade-up"
+      >
+        <input type="hidden" name="form-name" value="book-lesson" />
+
         <h2 id="form-title">
           Fill in your details, and I'll reach out to arrange your lessons!
         </h2>
         <div class="input-container">
-          <v-text-field label="Full name" required></v-text-field>
+          <v-text-field name="Name" label="Full name" required></v-text-field>
 
-          <v-text-field label="Phone" required></v-text-field>
+          <v-text-field name="phone" label="Phone" required></v-text-field>
 
-          <v-text-field label="E-mail" required></v-text-field>
+          <v-text-field name="email" label="E-mail" required></v-text-field>
+
+          <v-textarea name="message" label="Message"></v-textarea>
         </div>
         <div>
           <button type="submit">Send</button>
