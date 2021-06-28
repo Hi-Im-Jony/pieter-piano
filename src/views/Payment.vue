@@ -11,35 +11,28 @@
     </p>
     <div id="product-container">
       <product
-        title="30-min session"
+        title="Young Children's Lesson"
+        duration="30 minutes"
         image="experience-pic.jpg"
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      nobis veniam quos quam porro molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      nobis veniam quos quam porro molestias."
+        description="A short thirty-minute lesson is what I find to be the most suitable for young children who are just starting out. 
+        This is why I offer shorter lessons for children under 5yrs."
+        price="€19.99"
         link="#"
       />
       <product
-        title="30-min session"
+        title="Standard Lesson"
+        duration="45 minutes"
         image="experience-pic.jpg"
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      nobis veniam quos quam porro molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      nobis veniam quos quam porro molestias."
+        description="A standard, forty-five minute session, suitable for those over 5yrs."
+        price="€24.99"
         link="#"
       />
       <product
-        title="30-min session"
+        title="Full Term"
+        duration="10 x Standard Lesson's"
         image="experience-pic.jpg"
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      nobis veniam quos quam porro molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      nobis veniam quos quam porro molestias."
-        link="#"
-      />
-      <product
-        title="30-min session"
-        image="experience-pic.jpg"
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      nobis veniam quos quam porro molestias.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
-      nobis veniam quos quam porro molestias."
+        description="Save over 10% when paying for the full term all at once."
+        price="€219.99"
         link="#"
       />
     </div>
