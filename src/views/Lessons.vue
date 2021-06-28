@@ -11,10 +11,10 @@
 
       <form
         name="book-lesson"
-        method="post"
+        method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        data-aos="fade-up"
+        @submit.prevent="handleSubmit"
       >
         <input type="hidden" name="form-name" value="book-lesson" />
 
@@ -22,13 +22,32 @@
           Fill in your details, and I'll reach out to arrange your lessons!
         </h2>
         <div class="input-container">
-          <v-text-field name="Name" label="Full name" required></v-text-field>
+          <v-text-field
+            v-model="form.name"
+            name="name"
+            label="Full name"
+            required
+          ></v-text-field>
 
-          <v-text-field name="phone" label="Phone" required></v-text-field>
+          <v-text-field
+            v-model="form.phone"
+            name="phone"
+            label="Phone"
+            required
+          ></v-text-field>
 
-          <v-text-field name="email" label="E-mail" required></v-text-field>
+          <v-text-field
+            v-model="form.email"
+            name="email"
+            label="E-mail"
+            required
+          ></v-text-field>
 
-          <v-textarea name="message" label="Message"></v-textarea>
+          <v-textarea
+            v-model="form.message"
+            name="message"
+            label="Message"
+          ></v-textarea>
         </div>
         <div>
           <button type="submit">Send</button>
@@ -44,9 +63,38 @@ import MyFooter from "../components/my-footer.vue";
 import Services from "../components/services.vue";
 export default {
   name: "About",
+  data: () => ({
+    form: {
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+    },
+  }),
   components: {
     Services,
     MyFooter,
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
+    },
+    handleSubmit() {
+      fetch("/", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/x-www-urlencoded",
+        },
+        body: this.encode({
+          "form-name": "book-lesson",
+          ...this.form,
+        }),
+      });
+    },
   },
 };
 </script>
