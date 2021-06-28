@@ -7,7 +7,7 @@ let testimonials = [
   },
   {
     author: "Haitian Ni",
-    description: "Rian Ni's Father",
+    description: "Parent",
     text:
       "Rian start learning Piano with Pieter from three year ago at the age half five. We want to say that Pieter is an incredibly good piano teacher. \n In the past three years, we find Peter is a very responsible and passionate in teaching Piano. He is a very friendly and caring teacher, Rian always enjoyed his class and kept interest in the learning. He has the teaching skills that encourage and praise children.\n Pieter is also having great patient with children during teaching. For example, if the child confused or problem with an area, Pieter always willing go back to the start, explain the background of the piece and repeatedly show the child until fully understanding obtained.\nAlso, Pieter is a person who knows very well what the characteristics of children’s exam repertoire are, how to deal with each piece correctly, the handling of light and accent, the fast and slow rhythm, etc. It turns out that Pieter is right that understanding of the exam repertoire is correct. In the past Grade Exams, Rian has achieved distinctions in each of those!\nBased on our experience and we are highly recommended Pieter as a piano teacher!",
   },
