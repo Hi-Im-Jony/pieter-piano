@@ -90,6 +90,13 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background: linear-gradient(
+    180deg,
+    black,
+    rgb(51, 49, 49),
+    rgb(51, 49, 49),
+    black
+  );
 }
 #page-title {
   padding: 10px;
