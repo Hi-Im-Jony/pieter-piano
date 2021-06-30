@@ -65,4 +65,11 @@ export default {
   background: transparent;
   font-size: 20px !important;
 }
+
+@media only screen and (max-width: 600px) {
+  #pros-container {
+    flex-direction: column;
+    height: auto;
+  }
+}
 </style>

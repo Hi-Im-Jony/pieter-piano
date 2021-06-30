@@ -48,4 +48,9 @@ export default {
 
   font-size: 20px !important;
 }
+@media only screen and (max-width: 600px) {
+  .text-container {
+    padding: 180px 0 180px 0;
+  }
+}
 </style>

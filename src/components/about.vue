@@ -2,15 +2,15 @@
   <div id="about-container">
     <div id="background-color"></div>
     <div id="about">
+      <h1 id="about-title">
+        Allow Me To Introduce Myself
+      </h1>
       <div class="row">
         <div data-aos="fade-up">
           <img id="selfie" src="../assets/images/selfie.png" alt="" />
         </div>
 
         <div class="text-container" data-aos="fade-up">
-          <h1 id="about-title">
-            Allow Me To Introduce Myself
-          </h1>
           <p class="text">
             Hello there, my name is Pieter Louw, and I am a professional piano
             teacher.
@@ -37,9 +37,9 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row row-2">
         <div class="text-container" data-aos="fade-up">
-          <p class="text" style="color:black; padding:0 0 50px 0 ">
+          <p class="text text-2">
             As a result I have had great success using both the RIAM and TCM
             curricula with an average of eighty-percent distinctions over the
             years as well as numerous high achiever awards. I strive to teach
@@ -81,14 +81,13 @@ export default {
 }
 #about {
   width: 70%;
-  border-width: 1px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 40px 0px 40px;
   position: relative;
   color: white;
+  text-align: center;
 }
 #background-color {
   background: white;
@@ -105,6 +104,7 @@ export default {
   align-items: center;
   margin: 20px;
 }
+
 #fam-pic {
   width: 300px;
   height: 300px;
@@ -126,5 +126,41 @@ export default {
   text-align: center;
   font-size: 20px;
   margin: 20px;
+}
+.text-2 {
+  color: black;
+  padding: 0 0 50px 0;
+}
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    width: 100vw;
+    padding: 0px;
+    height: auto;
+  }
+  .row-2 {
+    flex-direction: column-reverse;
+    padding: 0 0 50px 0;
+  }
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+  #background-color {
+    display: none;
+  }
+  #selfie {
+    height: 300px;
+  }
+  #fam-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px black;
+  }
+  .text-2 {
+    padding: 0;
+    color: white;
+  }
 }
 </style>

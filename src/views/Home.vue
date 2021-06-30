@@ -31,7 +31,7 @@ export default {
 <style scoped>
 #parallax {
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   padding: 0px;
   margin: 0px;
   position: absolute;

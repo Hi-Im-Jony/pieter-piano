@@ -1,7 +1,7 @@
 <template>
   <footer>
     <small>&#169; All Rights Reserved</small>
-
+    <br />
     <small>
       Designed by
       <a href="https://corneljonathan.website" target="_blank">
@@ -22,8 +22,8 @@ footer {
   background-color: black;
   text-align: center;
   position: absolute;
-  width: 100vw;
-  padding: 10px;
+  width: 100%;
+  padding: 0 5px 0 5px;
   bottom: 0;
 }
 small {

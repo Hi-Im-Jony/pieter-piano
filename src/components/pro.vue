@@ -43,4 +43,17 @@ export default {
 .pro-text {
   white-space: break-spaces;
 }
+
+@media only screen and (max-width: 600px) {
+  #pro {
+    width: 250px;
+    height: auto;
+    bottom: 0;
+    margin: 25px 0 25px 0;
+  }
+
+  .pic {
+    width: 90%;
+  }
+}
 </style>

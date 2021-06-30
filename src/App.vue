@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <nav-bar />
+    <nav-bar v-if="windowWidth > 599" />
+    <nav-two v-if="windowWidth <= 599" />
     <v-main>
       <router-view />
     </v-main>
@@ -9,13 +10,15 @@
 
 <script>
 import NavBar from "./components/NavBar.vue";
+import NavTwo from "./components/navTwo.vue";
 export default {
   name: "App",
   components: {
     NavBar,
+    NavTwo,
   },
   data: () => ({
-    //
+    windowWidth: window.innerWidth,
   }),
 };
 </script>
