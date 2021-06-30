@@ -9,7 +9,7 @@
     <input type="hidden" name="form-name" value="book-lesson" />
 
     <h2 id="form-title">
-      Fill in your details, and I'll reach out to arrange your lessons!
+      {{ formMessage }}
     </h2>
     <div class="input-container">
       <v-text-field
@@ -48,6 +48,7 @@
 <script>
 export default {
   name: "bookingForm",
+  props: ["formMessage"],
   data: () => ({
     form: {
       name: "",

@@ -18,7 +18,9 @@
       />
     </div>
     <div id="custom-spacer"></div>
-    <booking-form />
+    <booking-form
+      formMessage="Fill in your details, and I'll reach out to arrange your lessons! "
+    />
   </div>
 </template>
 
