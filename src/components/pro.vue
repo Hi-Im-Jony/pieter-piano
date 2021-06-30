@@ -54,6 +54,7 @@ export default {
 
   .pic {
     width: 90%;
+    min-width: 0;
   }
 }
 </style>
