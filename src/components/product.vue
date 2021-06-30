@@ -26,9 +26,10 @@ export default {
   flex-direction: column;
   align-items: center;
   height: 500px;
-  width: 400px;
-  background-color: rgb(124, 124, 124);
+  max-width: 400px;
+  background-color: rgba(15, 15, 15, 0.815);
   box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  color: white;
   text-align: center;
   padding: 20px;
   margin: 20px;
@@ -37,7 +38,7 @@ export default {
   height: 25%;
 }
 .prod-img {
-  height: 25%;
+  height: 110px;
   margin: 20px;
 }
 
@@ -47,5 +48,12 @@ export default {
 
 .pay-btn {
   padding: 10px;
+}
+
+@media (max-width: 770px) {
+  .product {
+    min-height: 450px;
+    height: auto;
+  }
 }
 </style>

@@ -63,16 +63,19 @@ export default {
   padding: 10px;
   margin: 0 0 15px 0;
   border-bottom: solid white;
-  width: 20%;
   text-align: center;
 }
 #page-descriptor {
   width: 40%;
+  min-width: 200px;
   text-align: center;
 }
 #product-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 40px;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 </style>
