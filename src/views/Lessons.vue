@@ -50,4 +50,16 @@ export default {
   border-width: 1px;
   margin: 30px;
 }
+@media (max-width: 770px) {
+  #page-title {
+    width: 90%;
+  }
+  #lesson-pic {
+    width: 90%;
+    margin: 0 0 30px 0;
+  }
+  .lessons {
+    padding: 0 0 20px 0;
+  }
+}
 </style>

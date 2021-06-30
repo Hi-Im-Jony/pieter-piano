@@ -95,4 +95,11 @@ form {
 .input-container {
   width: 90%;
 }
+
+@media (max-width: 720px) {
+  form {
+    width: 95%;
+    max-width: 400px;
+  }
+}
 </style>

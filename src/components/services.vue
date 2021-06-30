@@ -53,4 +53,17 @@ export default {
   width: 60px;
   height: 60px;
 }
+
+@media (max-width: 720px) {
+  #container {
+    flex-direction: column;
+    padding: 0 0 40px 0;
+  }
+  #services-container {
+    width: 100%;
+  }
+  #custom-spacer {
+    display: none;
+  }
+}
 </style>

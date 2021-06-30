@@ -31,4 +31,13 @@ export default {
   border-width: 1px;
   margin: 0 0 20px 0;
 }
+@media (max-width: 720px) {
+  .service {
+    width: 75%;
+    min-width: 0;
+  }
+  .line {
+    width: 60%;
+  }
+}
 </style>
