@@ -1,16 +1,16 @@
 <template>
   <div id="contact-page">
     <h1 id="page-title">Contact Me Today</h1>
-    <p id="title-subscript">
+    <p id="page-descriptor">
       Don't hesitate to reach out with the contact information below, or send a
       message using the form.
     </p>
+    <div class="container">
+      <div></div>
+    </div>
 
     <div id="container">
       <div class="group">
-        <h1 class="group-title">
-          Where The Magic Happens
-        </h1>
         <p id="address">
           14 Deerhaven View Clonee Dublin 15,
           <br />
@@ -20,16 +20,12 @@
         <div id="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9514.637386196942!2d-6.424491412010229!3d53.40303337100356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48676d435847a377%3A0x47726fd553df79f5!2sParslickstown%2C%20Dublin%2C%20D15%20V4K8!5e0!3m2!1sen!2sie!4v1624546953460!5m2!1sen!2sie"
-            width="400"
-            height="520"
             style="border:0;"
-            allowfullscreen=""
             loading="lazy"
           ></iframe>
         </div>
       </div>
       <div class="group">
-        <h1 class="group-title">Send Me a Message</h1>
         <a itemprop="email" href="mailto:louwtjie911@gmail.com">
           louwtjie911@gmail.com
         </a>
@@ -62,6 +58,7 @@ export default {
   flex-direction: column;
   align-items: center;
   font-size: 18px;
+  text-align: center;
 }
 #contact-pic {
   width: 350px;
@@ -70,13 +67,18 @@ export default {
 #page-title {
   margin: 40px;
 }
+
+#page-descriptor {
+  width: 70%;
+}
 #contact-img {
   border-radius: 10%;
 }
 #container {
   display: flex;
-  width: 100vw;
+  width: 70vw;
   justify-content: center;
+  margin: 0 0 60px 0;
 }
 .group {
   display: flex;
@@ -84,11 +86,27 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%;
-  width: 25%;
-  margin: 50px 0 50px 0;
+  min-width: 25%;
+  margin: 0 25px 0 25px;
 }
-#map-container {
-  margin: 0 0 40px 0;
+
+iframe {
+  width: 400px;
+  height: 530px;
+}
+
+@media (max-width: 1185px) {
+  #container {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 0 80px 0;
+  }
+  .group {
+    width: 100%;
+    margin: 10px 0 10px 0;
+  }
+  iframe {
+    width: 100%;
+  }
 }
 </style>
