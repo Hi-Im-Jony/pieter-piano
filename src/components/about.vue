@@ -38,6 +38,9 @@
       </div>
 
       <div class="row row-2">
+        <div data-aos="fade-up">
+          <img id="fam-pic" src="../assets/images/Fam-photo.jpeg" alt="" />
+        </div>
         <div class="text-container" data-aos="fade-up">
           <p class="text text-2">
             As a result I have had great success using both the RIAM and TCM
@@ -53,9 +56,6 @@
             contact me if you are ready to experience the joy of learning to
             play the piano with a master teacher.
           </p>
-        </div>
-        <div data-aos="fade-up">
-          <img id="fam-pic" src="../assets/images/Fam-photo.jpeg" alt="" />
         </div>
       </div>
     </div>
@@ -90,7 +90,7 @@ export default {
   text-align: center;
 }
 #background-color {
-  background: white;
+  background: rgb(46, 45, 45);
   height: 40vh;
   width: 100vw;
   position: absolute;
@@ -100,8 +100,8 @@ export default {
 .row {
   display: flex;
   width: 100%;
-
   align-items: center;
+  justify-content: center;
   margin: 20px;
 }
 
@@ -128,7 +128,6 @@ export default {
   margin: 20px;
 }
 .text-2 {
-  color: black;
   padding: 0 0 50px 0;
 }
 @media only screen and (max-width: 600px) {
@@ -139,7 +138,6 @@ export default {
     height: auto;
   }
   .row-2 {
-    flex-direction: column-reverse;
     padding: 0 0 50px 0;
   }
   .text-container {

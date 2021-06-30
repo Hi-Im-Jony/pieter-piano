@@ -53,10 +53,11 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40px 0 40px 0;
+  padding: 40px 0 0 0;
   width: 100vw;
-  height: 450px;
+  min-height: 400px;
   background-color: white;
+  flex-wrap: wrap;
 }
 
 #custom-btn {
@@ -66,7 +67,7 @@ export default {
   font-size: 20px !important;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   #pros-container {
     flex-direction: column;
     height: auto;

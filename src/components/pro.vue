@@ -26,17 +26,17 @@ export default {
   position: relative;
   margin: 50px;
   padding: 20px;
-  width: 500px;
+  max-width: 400px;
   height: 500px;
   text-align: center;
-  position: relative;
-  bottom: 15vh;
+
   border-radius: 25px;
   box-shadow: 1px 2px 5px 0px black;
   color: black;
 }
 .pic {
-  width: 300px;
+  width: 20vw;
+  min-width: 300px;
   border-radius: 10px;
   margin: 20px 0 20px 0;
 }
