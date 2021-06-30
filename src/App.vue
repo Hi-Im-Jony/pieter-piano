@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <nav-bar v-if="windowWidth > 599" />
-    <nav-two v-if="windowWidth <= 599" />
+    <nav-bar v-if="windowWidth > 770" />
+    <nav-two v-if="windowWidth <= 770" />
     <v-main>
       <router-view />
     </v-main>
