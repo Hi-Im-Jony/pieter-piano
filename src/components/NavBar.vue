@@ -13,7 +13,7 @@
       <a class="nav-link" href="/contact">Contact</a>
 
       <div class="custom-spacer" />
-      <v-menu open-on-hover top offset-y class="custom-menu">
+      <v-menu open-on-hover offset-y bottom nudge-left="30" class="custom-menu">
         <template v-slot:activator="{ on, attrs }">
           <a class="nav-link" v-bind="attrs" v-on="on">
             Media

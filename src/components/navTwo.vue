@@ -11,11 +11,30 @@
 
     <v-navigation-drawer v-model="drawer" app temporary>
       <div id="nav-links-container">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Book Lesson</a>
-        <a href="#" class="nav-link">Contact</a>
-        <a href="#" class="nav-link">Media</a>
-        <a href="#" class="nav-link">Online Payments</a>
+        <a href="/" class="nav-link">Home</a>
+        <a href="/lessons" class="nav-link">Book Lesson</a>
+        <a href="/contact" class="nav-link">Contact</a>
+
+        <v-menu
+          open-on-hover
+          offset-y
+          bottom
+          nudge-left="30"
+          class="custom-menu"
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <a class="nav-link" v-bind="attrs" v-on="on">
+              Media
+            </a>
+          </template>
+
+          <v-list flat>
+            <v-list-item v-for="(item, index) in items" :key="index">
+              <a class="nav-link" :href="item.to">{{ item.title }}</a>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+        <a href="/payments" class="nav-link">Online Payments</a>
       </div>
     </v-navigation-drawer>
   </div>
@@ -26,7 +45,22 @@ export default {
   name: "navTwo",
   data: () => ({
     drawer: false,
+    media: false,
     group: null,
+    items: [
+      {
+        title: "Recitals",
+        to: "/recitals",
+      },
+      // {
+      //   title: "Past and Present Pupils",
+      //   to: "/pupils",
+      // },
+      {
+        title: "Testimonials",
+        to: "/testimonials",
+      },
+    ],
   }),
 };
 </script>
@@ -68,5 +102,11 @@ export default {
 }
 .nav-link:active {
   color: rgb(46, 102, 206);
+}
+#media-container {
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
