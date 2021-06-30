@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <nav-bar />
-    <v-content>
+    <v-main>
       <router-view />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -25,7 +25,6 @@ export default {
   font-size: 16.5px;
   padding: 0px;
   margin: 0px;
-  color: rgb(223, 219, 219);
   background-color: rgb(29, 27, 27);
 }
 </style>

@@ -16,8 +16,9 @@ export default {
 <style scoped>
 .service {
   text-align: center;
-  width: 100%;
-  margin: 20px;
+  min-width: 300px;
+  max-width: 450px;
+  margin: 20px 0 20px 0;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -25,8 +26,8 @@ export default {
 }
 .line {
   height: 1px;
-  width: 55%;
-  border-top: solid white;
+  width: 300px;
+  border-top: solid black;
   border-width: 1px;
   margin: 0 0 20px 0;
 }

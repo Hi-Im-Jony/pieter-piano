@@ -34,8 +34,9 @@ export default {
   padding: 40px;
   margin: 20px;
   width: 50%;
-  background: rgba(17, 17, 17, 1);
-  box-shadow: 0px 0px 2px 0px black;
+  background: rgb(161, 160, 160);
+  box-shadow: 0px 0px 10px 0px black;
+  color: white;
 }
 .caption-container {
   text-align: center;

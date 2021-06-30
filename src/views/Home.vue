@@ -3,6 +3,7 @@
     <div id="parallax">
       <welcome-text />
       <pros />
+
       <about />
 
       <my-footer />
@@ -34,9 +35,9 @@ export default {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  background-image: url("../assets/images/potential-pic.jpg");
+  background-image: url("../assets/images/home.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }

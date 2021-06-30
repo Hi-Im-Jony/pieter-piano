@@ -1,6 +1,6 @@
 <template>
   <div id="navbar">
-    <v-app-bar color="rgb(27,27,27)" dark fixed app flat>
+    <v-app-bar color="white" fixed app>
       <a href="/" id="title-sub-container">
         <h1 id="title">Piano Pieter</h1>
         <small id="sub">Professional Piano Lessons</small>
@@ -13,7 +13,7 @@
       <a class="nav-link" href="/contact">Contact</a>
 
       <div class="custom-spacer" />
-      <v-menu class="custom-menu" dark open-on-hover top offset-y>
+      <v-menu open-on-hover top offset-y class="custom-menu">
         <template v-slot:activator="{ on, attrs }">
           <a class="nav-link" v-bind="attrs" v-on="on">
             Media
@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .nav-link {
-  color: white;
+  color: black;
   text-decoration: none;
   margin: 0 10px 0 10px;
 }
@@ -73,12 +73,12 @@ export default {
 #title {
   padding: 0px;
   margin: 10px 0px -10px 0px;
-  color: white;
+  color: black;
 }
 #sub {
   padding: 0px 0px 10px 0px;
   margin: 0px;
-  color: white;
+  color: black;
 }
 #title-sub-container {
   color: black;
@@ -92,6 +92,6 @@ export default {
   width: 75px;
 }
 .custom-menu {
-  background-color: rgb(27, 27, 27) !important;
+  background-color: black !important;
 }
 </style>

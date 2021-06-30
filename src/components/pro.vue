@@ -24,16 +24,15 @@ export default {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  border-width: 1px;
   margin: 50px;
   padding: 20px;
   width: 500px;
   height: 500px;
   text-align: center;
   position: relative;
-  bottom: 25vh;
+  bottom: 15vh;
   border-radius: 25px;
-  box-shadow: 0px 0px 10px 0px black;
+  box-shadow: 1px 2px 5px 0px black;
   color: black;
 }
 .pic {

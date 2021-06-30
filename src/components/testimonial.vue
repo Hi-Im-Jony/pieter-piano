@@ -8,12 +8,12 @@
       <div v-if="!readMore" class="short-text">
         "{{ test.text.slice(0, 200) }}..."
         <br />
-        <a v-on:click="readMore = true"> Read more</a>
+        <a class="read-btn" v-on:click="readMore = true"> Read more</a>
       </div>
       <div v-else>
         "{{ test.text }}"
         <br />
-        <a v-on:click="readMore = false">See less</a>
+        <a class="read-btn" v-on:click="readMore = false">See less</a>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .testimonial {
-  background: rgb(17, 17, 17);
+  background: rgb(116, 116, 116);
   box-shadow: 0px 0px 5px 2px black;
   display: flex;
   justify-content: left;
@@ -52,5 +52,11 @@ export default {
   width: 500px;
   padding: 0 10px 0 0;
   text-align: center;
+}
+.read-btn {
+  color: white;
+}
+.read-btn:hover {
+  color: lightskyblue;
 }
 </style>

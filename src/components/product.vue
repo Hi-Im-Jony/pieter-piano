@@ -27,8 +27,8 @@ export default {
   align-items: center;
   height: 500px;
   width: 400px;
-  background-color: rgb(7, 7, 7);
-  box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+  background-color: rgb(124, 124, 124);
+  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
   text-align: center;
   padding: 20px;
   margin: 20px;

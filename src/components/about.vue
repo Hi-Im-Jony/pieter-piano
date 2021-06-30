@@ -2,18 +2,15 @@
   <div id="about-container">
     <div id="background-color"></div>
     <div id="about">
-      <div data-aos="fade-up">
-        <h1 id="about-title">
-          Allow Me To Introduce Myself
-        </h1>
-      </div>
-
       <div class="row">
         <div data-aos="fade-up">
           <img id="selfie" src="../assets/images/selfie.png" alt="" />
         </div>
 
         <div class="text-container" data-aos="fade-up">
+          <h1 id="about-title">
+            Allow Me To Introduce Myself
+          </h1>
           <p class="text">
             Hello there, my name is Pieter Louw, and I am a professional piano
             teacher.
@@ -40,9 +37,9 @@
         </div>
       </div>
 
-      <div id="row-2" class="row">
+      <div class="row">
         <div class="text-container" data-aos="fade-up">
-          <p class="text">
+          <p class="text" style="color:black; padding:0 0 50px 0 ">
             As a result I have had great success using both the RIAM and TCM
             curricula with an average of eighty-percent distinctions over the
             years as well as numerous high achiever awards. I strive to teach
@@ -62,11 +59,6 @@
         </div>
       </div>
     </div>
-    <div id="btn-container">
-      <v-btn href="/testimonials" id="custom-btn">
-        Testimonials
-      </v-btn>
-    </div>
   </div>
 </template>
 
@@ -78,13 +70,14 @@ export default {
 
 <style scoped>
 #about-container {
-  background: rgb(29, 27, 27);
+  background: rgb(46, 45, 45);
   width: 100vw;
-  padding: 20px;
+  padding: 30px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 #about {
   width: 70%;
@@ -95,25 +88,22 @@ export default {
   align-items: center;
   padding: 0px 40px 0px 40px;
   position: relative;
-  bottom: 25vh;
+  color: white;
 }
 #background-color {
-  background: rgb(39, 38, 38);
-  height: 48vh;
+  background: white;
+  height: 40vh;
   width: 100vw;
   position: absolute;
   bottom: 0;
 }
-#about-title {
-  margin: 20px;
-  position: relative;
-  bottom: 5vh;
-}
+
 .row {
   display: flex;
   width: 100%;
+
   align-items: center;
-  margin: 40px;
+  margin: 20px;
 }
 #fam-pic {
   width: 300px;
@@ -130,24 +120,11 @@ export default {
 }
 .text-container {
   width: 70%;
+  text-align: center;
 }
 .text {
   text-align: center;
   font-size: 20px;
   margin: 20px;
-}
-
-#btn-container {
-  position: absolute;
-  bottom: 15vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-#custom-btn {
-  border: solid rgb(245, 245, 237) !important;
-  color: rgb(245, 245, 237) !important;
-  background: transparent;
-  font-size: 20px !important;
 }
 </style>

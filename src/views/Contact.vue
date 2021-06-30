@@ -65,13 +65,7 @@ export default {
 
 <style scoped>
 #contact-page {
-  background: linear-gradient(
-    180deg,
-    black,
-    rgb(51, 49, 49),
-    rgb(51, 49, 49),
-    black
-  );
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;

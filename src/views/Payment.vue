@@ -56,13 +56,7 @@ export default {
   align-items: center;
   padding: 20px;
   text-align: center;
-  background: linear-gradient(
-    180deg,
-    black,
-    rgb(51, 49, 49),
-    rgb(51, 49, 49),
-    black
-  );
+  background: white;
   min-height: 100vh;
 }
 #page-title {
