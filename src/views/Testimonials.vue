@@ -37,9 +37,11 @@ export default {
   align-items: center;
   background: white;
   min-height: 100vh;
+  padding-bottom: 50px;
 }
 #page-title {
   margin: 40px;
+  text-align: center;
 }
 #page-descriptor {
   text-align: center;

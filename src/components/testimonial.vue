@@ -49,7 +49,7 @@ export default {
 }
 
 .test-text-container {
-  width: 500px;
+  max-width: 500px;
   padding: 0 10px 0 0;
   text-align: center;
 }
@@ -58,5 +58,21 @@ export default {
 }
 .read-btn:hover {
   color: lightskyblue;
+}
+
+@media (max-width: 770px) {
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+  .author-container {
+    border: none;
+    border-bottom: solid white;
+    border-width: 1px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    width: 60%;
+  }
 }
 </style>
