@@ -96,8 +96,8 @@ export default {
   padding: 10px;
   margin: 0 0 15px 0;
   border-bottom: solid white;
-  width: 20%;
   text-align: center;
+  border-bottom: solid black;
 }
 #page-descriptor {
   width: 40%;
@@ -105,5 +105,11 @@ export default {
 }
 #spacer-20px {
   height: 20px;
+}
+
+@media (max-width: 770px) {
+  #page-descriptor {
+    width: 80%;
+  }
 }
 </style>

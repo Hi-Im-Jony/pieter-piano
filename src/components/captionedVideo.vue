@@ -1,18 +1,19 @@
 <template>
   <div data-aos="fade-up" class="container">
-    <div v-if="orientation == 'left'" class="caption-container">
+    <div
+      v-if="orientation == 'left' || windowWidth <= 549"
+      class="caption-container"
+    >
       <i class="piece-title">"{{ piece }}"</i>
       <p class="description">Perfromed by {{ performer }}</p>
     </div>
     <div class="video-container">
-      <video
-        width="500"
-        height="250"
-        controls
-        :src="require('../assets/videos/' + src + '')"
-      ></video>
+      <video controls :src="require('../assets/videos/' + src + '')"></video>
     </div>
-    <div v-if="orientation == 'right'" class="caption-container">
+    <div
+      v-if="orientation == 'right' && windowWidth > 549"
+      class="caption-container"
+    >
       <i class="piece-title">"{{ piece }}"</i>
       <p class="description">Perfromed by {{ performer }}</p>
     </div>
@@ -23,6 +24,9 @@
 export default {
   name: "CaptionedVideo",
   props: ["piece", "performer", "orientation", "src"],
+  data: () => ({
+    windowWidth: window.innerWidth,
+  }),
 };
 </script>
 
@@ -40,6 +44,37 @@ export default {
 }
 .caption-container {
   text-align: center;
-  width: 500px;
+  width: 45%;
+  margin: 0 10px 0 10px;
+}
+video {
+  width: 20vw;
+  min-width: 200px;
+}
+@media (max-width: 770px) {
+  .container {
+    width: 90%;
+    max-width: 600px;
+  }
+  .video-container {
+    width: 50%;
+  }
+  video {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    flex-direction: column;
+    padding: 15px 5px 15px 5px;
+  }
+  .video-container {
+    width: 100%;
+  }
+  video {
+    width: 100%;
+  }
 }
 </style>
