@@ -8,6 +8,12 @@
       Below are a few pieces previously played at the recitals.
     </p>
     <captioned-video
+      piece="Voiles"
+      performer="Daire"
+      orientation="left"
+      src="Voiles.mp4"
+    />
+    <captioned-video
       piece="Chord Capers"
       performer="Declan, age 8"
       orientation="left"
