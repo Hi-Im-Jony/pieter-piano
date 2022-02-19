@@ -50,6 +50,13 @@ export default {
   },
   metaInfo: {
     title: "Contact",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Don't hesitate to reach out if you have any questions regarding piano lessons",
+      },
+    ],
   },
 };
 </script>

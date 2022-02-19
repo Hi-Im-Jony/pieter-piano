@@ -48,6 +48,13 @@ export default {
   components: { Product, MyFooter },
   metaInfo: {
     title: "Payment",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Pay for your piano lessons - Easy and hassle free online payments are here!",
+      },
+    ],
   },
 };
 </script>

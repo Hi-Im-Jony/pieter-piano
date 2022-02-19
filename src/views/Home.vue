@@ -27,6 +27,13 @@ export default {
   },
   metaInfo: {
     title: "Home",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Professional piano lessons in Dublin, delivered by an experienced teacher, with an unbeatable distinction rate!",
+      },
+    ],
   },
 };
 </script>

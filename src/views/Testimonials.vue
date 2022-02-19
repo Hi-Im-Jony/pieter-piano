@@ -29,6 +29,13 @@ export default {
   },
   metaInfo: {
     title: "Testimonials",
+    meta: [
+      {
+        name: "description",
+        content:
+          "I dedicate myself to always give my students the best learning experience they can have. And I am delighted to display below some of the endorsements, testimonials, and reviews that reflect this, all from past and present pupils.",
+      },
+    ],
   },
 };
 </script>

@@ -89,6 +89,13 @@ export default {
   },
   metaInfo: {
     title: "Recitals",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Every year, I invite my students to take part in our annual recital. It not only gives them an opportunity to show off what they have learnt, but I also believe that performing is also a skill that needs to be developed. Below are a few pieces previously played at the recitals.",
+      },
+    ],
   },
 };
 </script>

@@ -24,6 +24,13 @@ export default {
   },
   metaInfo: {
     title: "Book Lessons",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Book piano or theory lessons today, in person in Dublin or online",
+      },
+    ],
   },
 };
 </script>
