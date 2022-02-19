@@ -25,6 +25,9 @@ export default {
     About,
     myFooter,
   },
+  metaInfo: {
+    title: "Home",
+  },
 };
 </script>
 

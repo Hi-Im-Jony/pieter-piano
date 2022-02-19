@@ -87,6 +87,9 @@ export default {
     CaptionedVideo,
     MyFooter,
   },
+  metaInfo: {
+    title: "Recitals",
+  },
 };
 </script>
 

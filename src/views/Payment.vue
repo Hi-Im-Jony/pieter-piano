@@ -46,6 +46,9 @@ import Product from "../components/product.vue";
 export default {
   name: "payments",
   components: { Product, MyFooter },
+  metaInfo: {
+    title: "Payment",
+  },
 };
 </script>
 

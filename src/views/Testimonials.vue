@@ -27,6 +27,9 @@ export default {
       tests: testimonials,
     };
   },
+  metaInfo: {
+    title: "Testimonials",
+  },
 };
 </script>
 

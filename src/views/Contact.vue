@@ -48,6 +48,9 @@ export default {
     MyFooter,
     BookingForm,
   },
+  metaInfo: {
+    title: "Contact",
+  },
 };
 </script>
 

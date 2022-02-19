@@ -22,6 +22,9 @@ export default {
     Services,
     MyFooter,
   },
+  metaInfo: {
+    title: "Book Lessons",
+  },
 };
 </script>
 

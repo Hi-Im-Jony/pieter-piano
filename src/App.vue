@@ -20,6 +20,9 @@ export default {
   data: () => ({
     windowWidth: window.innerWidth,
   }),
+  metaInfo: {
+    titleTemplate: "Piano Peter - %s",
+  },
 };
 </script>
 
